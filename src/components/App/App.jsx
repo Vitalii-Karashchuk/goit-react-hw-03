@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
-
-import '../App/App.module.css';
+import css from '../App/App.module.css';
 import ContactList from '../ContactList/ContactList';
 import SearchBox from '../SearchBox/SearchBox';
 import ContactForm from '../ContactForm/ContactForm';
@@ -42,7 +41,7 @@ export default function App() {
   );
 
   return (
-    <div>
+    <div className={css.container}>
       <h1>Phonebook</h1>
       <ContactForm onaddContact={addContact} />
       <SearchBox onhandleSearch={handleInpSearch} value={search} />

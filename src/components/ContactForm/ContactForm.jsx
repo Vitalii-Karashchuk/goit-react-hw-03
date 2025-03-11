@@ -33,13 +33,20 @@ export default function ContactForm({ onaddContact }) {
       >
         <Form className={css.form}>
           <label htmlFor="name">Name</label>
-          <Field type="text" name="name" id="name" />
-          <ErrorMessage name="name" component="span" clame={css.error} />
+          <Field className={css.inputStyle} type="text" name="name" id="name" />
+          <ErrorMessage className={css.error} name="name" component="span" />
           <label htmlFor="number">Number</label>
-          <Field type="text" name="number" id="number" />
-          <ErrorMessage name="number" component="span" className={css.error} />
+          <Field
+            className={css.inputStyle}
+            type="text"
+            name="number"
+            id="number"
+          />
+          <ErrorMessage className={css.error} name="number" component="span" />
 
-          <button type="submit">Add contact</button>
+          <button type="submit" className={css.btnForm}>
+            Add contact
+          </button>
         </Form>
       </Formik>
     </div>

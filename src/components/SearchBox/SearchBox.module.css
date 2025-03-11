@@ -1,0 +1,12 @@
+.searchStyle{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.inputStyle {
+    height: 30px;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    outline: none;
+}

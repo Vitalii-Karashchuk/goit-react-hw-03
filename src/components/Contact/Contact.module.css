@@ -1,0 +1,31 @@
+.itemContact{
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        border: 2px solid #817b7b;
+        border-radius: 8px;
+        margin-bottom: 10px;
+}
+
+.contactName, .contactNumber{
+    display: flex;
+        align-items: center;
+        gap: 5px;
+        margin: 0;
+}
+
+.info{
+    display: flex;
+        flex-direction: column;
+        gap: 5px;
+}
+
+.btnDelete{
+    border: 1px solid #817b7b;
+        background-color: #eeeded;
+        height: 35px;
+        max-width: 80px;
+        width: 100%;
+        padding: 5px;
+}
